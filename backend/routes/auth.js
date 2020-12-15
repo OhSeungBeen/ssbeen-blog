@@ -5,6 +5,14 @@ const { User } = require('../models/user');
 const { isLoggedIn, isNotLoggedIn } = require('./middleware');
 const router = express.Router();
 
+router.get('/status', (req, res, next) => {
+  if (req.isAuthenticated()) {
+    res.send({ status: 'login' });
+  } else {
+    res.send({ status: 'logout' });
+  }
+});
+
 // sign up
 router.post('/join', isNotLoggedIn, async (req, res, next) => {
   const { nickname, email, password } = req.body;

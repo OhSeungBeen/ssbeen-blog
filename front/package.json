@@ -1,0 +1,14 @@
+{
+  "name": "ssbeen-blog-font",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "seungbeenoh",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.5.5"
+  }
+}
