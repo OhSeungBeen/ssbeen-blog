@@ -1,11 +1,16 @@
 import { Component } from "react";
 import PropType from 'prop-types';
+import Head from 'next/head';
 import 'antd/dist/antd.css'
 
 const App = ({ Component }) => {
   return (
     <>
-      <div>hi</div>
+      <Head>
+        <meta charSet='utf-8'/>
+        <title>SSB BLOG</title>
+      </Head>
+      
       <Component/>
     </>
   )

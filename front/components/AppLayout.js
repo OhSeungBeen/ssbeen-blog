@@ -1,7 +1,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import Link from 'next/link';
-import { Menu } from 'antd';
+import { Menu, Row, Col } from 'antd';
 
 const AppLayout = ({ children }) => {
   return (
@@ -14,7 +14,15 @@ const AppLayout = ({ children }) => {
           <Link href='/signup'><a>회원 가입</a></Link>
         </Menu.Item>
       </Menu>
-        {children}
+      <Row>
+        {/* <Col xs={24} md={6}>
+          
+        </Col>
+          {children}
+        <Col xs={24} md={6}/>
+        <Col xs={24} md={6}/> */}
+      </Row>
+      
     </div>
     
   )
